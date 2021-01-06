@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.BottomNav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  top: 50px;
+  width: 100%;
+  min-height: 50px;
+  background: #ffffff;
+  border-bottom: solid 1px #dfdede;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: 500;
+}

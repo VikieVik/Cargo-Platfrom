@@ -1,0 +1,29 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.map-container {
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  padding: 0px 0px 0px 0px;
+}
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+.mapbox-logo {
+  display: none;
+}
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+.mapbox-improve-map {
+  display: none;
+}
+.mapboxgl-ctrl-compass {
+  display: none;
+}
+.mapboxgl-street-map {
+  display: none;
+}

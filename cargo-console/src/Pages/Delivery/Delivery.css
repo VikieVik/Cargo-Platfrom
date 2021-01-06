@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+footer {
+  position: absolute;
+  left: 45%;
+  top: 96%;
+}
+
+footer h1 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #414141;
+}

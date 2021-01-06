@@ -1,0 +1,59 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.DataBoxItem-container {
+  position: relative;
+  z-index: 2;
+  width: 325px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.DataBoxItem-container h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1f1f1f;
+}
+
+.items-row1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0.1vh;
+}
+
+.items-row2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0.1vh;
+}
+
+.items-row3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0.1vh;
+}
+
+.items-row4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0.1vh;
+}
+
+.margin {
+  margin-top: 5px;
+  height: 1px;
+  width: 95%;
+  background-color: #dfdede;
+}

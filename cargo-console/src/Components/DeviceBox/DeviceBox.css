@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.DeviceBox {
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  z-index: 9;
+  width: 30%;
+  height: 100vh;
+  background: #ffffff;
+  border: solid 1px #dfdede;
+}
+
+.title {
+  margin-top: 70px;
+  border-bottom: solid 1px #dfdede;
+  padding-bottom: 10px;
+}
+
+.title h1 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.DeviceBox-data {
+  height: 90%;
+  overflow-y: scroll !important;
+  overflow: hidden;
+}
