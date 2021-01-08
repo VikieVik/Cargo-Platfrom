@@ -28,7 +28,7 @@
 }
 
 .DeviceBox-data {
-  height: 90%;
+  height: 85%;
   overflow-y: scroll !important;
   overflow: hidden;
 }

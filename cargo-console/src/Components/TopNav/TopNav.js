@@ -11,6 +11,7 @@ export default function TopNav() {
   const [activeColor1, setActiveColor1] = useState("#313131");
   const [activeColor2, setActiveColor2] = useState("#313131");
   const [activeColor3, setActiveColor3] = useState("#313131");
+  const [activeColor4, setActiveColor4] = useState("#313131");
 
   var trackerPageLink = css`
      {
@@ -25,6 +26,11 @@ export default function TopNav() {
   var alertPageLink = css`
      {
       color: ${activeColor3};
+    }
+  `;
+  var settingPageLink = css`
+     {
+      color: ${activeColor4};
     }
   `;
 
@@ -44,6 +50,9 @@ export default function TopNav() {
         break;
       case "/alert":
         setActiveColor3("#e7ac0a");
+        break;
+      case "/setting":
+        setActiveColor4("#e7ac0a");
         break;
       default:
         setActiveColor1("#e7ac0a");
@@ -68,6 +77,11 @@ export default function TopNav() {
         <Link className="nav-link" to="/alert">
           <h1 className={alertPageLink} id="nav-link-text">
             Alert
+          </h1>
+        </Link>
+        <Link className="nav-link" to="/setting">
+          <h1 className={settingPageLink} id="nav-link-text">
+            Setting
           </h1>
         </Link>
       </div>

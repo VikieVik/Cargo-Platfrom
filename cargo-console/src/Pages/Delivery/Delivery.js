@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./Delivery.css";
+import firebase from "../../firebase.js";
+import Web3 from "web3";
 import TopNav from "../../Components/TopNav/TopNav.js";
 import DeviceBox from "../../Components/DeviceBox/DeviceBox.js";
 import Map from "../../Components/Map/Map.js";
-import firebase from "../../firebase.js";
 
 export default function Delivery() {
   // Stores list of markers from DB
   const [markerList, setMarkerList] = useState();
   var markerIcon = "✅ ";
 
-  // fetch Marker data from DB
-  useEffect(() => {
+  const readDatafromDB = () => {
     const markerRef = firebase.database().ref("tracking-data");
     markerRef.on("value", (snapshot) => {
       const markers = snapshot.val();
@@ -22,6 +22,11 @@ export default function Delivery() {
       }
       setMarkerList(markerList);
     });
+  };
+
+  useEffect(() => {
+    //Read data from firebase realtime db
+    readDatafromDB();
   }, []);
 
   return (
